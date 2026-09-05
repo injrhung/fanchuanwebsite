@@ -1,0 +1,36 @@
+.contact-card-remit{display:flex;flex-direction:column}
+.remit-card-note{margin:0 0 16px;color:#647169;font-size:14px}
+.remit-open-btn{width:100%;min-height:48px}
+.remit-overlay{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(23,60,46,.6)}
+.remit-overlay[hidden]{display:none}
+.remit-modal{width:100%;max-width:460px;max-height:calc(100vh - 40px);overflow-y:auto;background:var(--paper);color:var(--ink);border:1px solid var(--line);box-shadow:0 24px 70px rgba(32,51,43,.3)}
+.remit-modal-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 22px 20px 28px;border-bottom:1px solid var(--line)}
+.remit-modal-head h2{margin:0;font:700 22px var(--serif);letter-spacing:.02em}
+.remit-close{flex:none;width:44px;height:44px;display:grid;place-items:center;border:0;background:transparent;color:var(--ink);font-size:24px;line-height:1;cursor:pointer;border-radius:6px}
+.remit-close:hover{color:var(--orange)}
+.remit-modal-body{padding:26px 28px 28px}
+#remit-desc{margin:0 0 20px;color:#56655e}
+.remit-field{margin-bottom:0}
+.remit-label{display:block;margin-bottom:8px;font-size:13px;font-weight:800;letter-spacing:.1em;color:var(--forest)}
+.remit-input{width:100%;min-height:48px;padding:0 14px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:19px;letter-spacing:.16em;font-family:var(--sans)}
+.remit-input:disabled{background:var(--cream);color:#9aa39d}
+#remit-form{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap}
+#remit-form .remit-field{flex:1 1 220px}
+.remit-submit{min-height:48px;flex:none}
+.remit-error{margin:14px 0 0;color:#a4321f;font-size:14px;font-weight:700;line-height:1.6}
+.remit-info{margin:0;display:grid;gap:14px}
+.remit-info>div{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding-bottom:12px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.remit-info dt{margin:0;flex:none;font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--orange);text-transform:uppercase}
+.remit-info dd{margin:0;display:flex;align-items:center;gap:10px;flex-wrap:wrap;font:700 17px var(--serif);word-break:break-all;text-align:right}
+.remit-copy{flex:none;min-height:44px;padding:0 14px;border:1px solid var(--line);background:var(--cream);color:var(--ink);font:700 13px var(--sans);cursor:pointer}
+.remit-copy:hover{background:var(--orange);border-color:var(--orange);color:#fff}
+.remit-reminder{margin:22px 0 0;padding:16px 18px;border-left:4px solid var(--orange);background:var(--cream);color:#56655e;font-size:13px;line-height:1.75}
+.remit-live{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:560px){
+  .remit-modal{max-width:100%}
+  .remit-modal-body{padding:22px 20px 26px}
+  #remit-form{flex-direction:column;align-items:stretch}
+  .remit-submit{width:100%}
+  .remit-info>div{flex-direction:column;align-items:flex-start;gap:8px}
+  .remit-info dd{text-align:left}
+}

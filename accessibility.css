@@ -1,0 +1,29 @@
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+  transform: translateY(-160%);
+  padding: 10px 14px;
+  background: #fff;
+  color: #173c2e;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .16);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 3px solid #d5a83f;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+.about-number {
+  background-image: linear-gradient(rgba(23, 60, 46, .77), rgba(23, 60, 46, .9)), url("images/關於我們/storefront.jpg");
+}

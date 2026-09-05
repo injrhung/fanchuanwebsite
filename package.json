@@ -1,0 +1,10 @@
+{
+  "name": "fanchuan-website",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "python3 -m http.server 4173",
+    "build": "node build.mjs",
+    "encrypt:remittance": "node tools/encrypt-remittance.mjs"
+  }
+}
