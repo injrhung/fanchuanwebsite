@@ -8,9 +8,7 @@ const files = [
   "styles.css",
   "accessibility.css",
   "pages.css",
-  "remittance.css",
-  "remittance.js",
-  "remittance-data.js",
+  "nav.js",
   "favicon.svg",
   "robots.txt",
   "site.webmanifest"
